@@ -1,7 +1,7 @@
 <?php
 
     
-    use Source\Models\UUID as uuid;
+    /*use Source\Models\UUID as uuid;
     require_once(__DIR__ . '/source/Models/UUID.php');
 
     $path = $_GET['path'] ?? -1;
@@ -26,4 +26,12 @@
         $errors=array("error"=>"No Route matched with those values.");
         header('Content-Type: application/json; charset=utf-8');
         echo json_encode($errors);
+    }*/
+
+    $path = echo __DIR__ ;
+    $diretorio = dir($path);
+    echo "Lista de Arquivos do diretório '<strong>".$path."</strong>':<br />";
+    while($arquivo = $diretorio -> read()){
+        echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />";
     }
+    $diretorio -> close();
