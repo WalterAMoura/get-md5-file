@@ -1,6 +1,7 @@
 <?php
 
-    use Source\Models\UUID as uuid;
+    
+/*use Source\Models\UUID as uuid;
     require_once(__DIR__ . '/source/Models/UUID.php');
 
     $path = $_GET['path'] ?? -1;
@@ -27,3 +28,5 @@
         echo json_encode($errors);
     }
 
+*/
+echo __DIR__;
