@@ -2,7 +2,7 @@
 
     $path = $_GET['path'] ?? -1;
     $file = $_FILES['file'] ?? -1;
-    $dirUpload = "./upload";
+    $dirUpload = __DIR__ ."/upload";
 
     if($path == 'upload'){
         $fileName= getUUID();
