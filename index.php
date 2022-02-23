@@ -28,7 +28,7 @@
         echo json_encode($errors);
     }*/
 
-    $path = echo __DIR__ ;
+    $path = __DIR__ ;
     $diretorio = dir($path);
     echo "Lista de Arquivos do diretório '<strong>".$path."</strong>':<br />";
     while($arquivo = $diretorio -> read()){
